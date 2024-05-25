@@ -46,7 +46,7 @@ let fun = () => {
         btn9.disabled = true;
 
         btn4.style.color = "red";
-        btn5.style.color = "red";
+        btn5.style.color = "rod";
         btn6.style.color = "red";
 
         document.getElementById("print").innerHTML = "Person X is won";
