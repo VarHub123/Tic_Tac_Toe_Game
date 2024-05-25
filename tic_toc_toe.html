@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic_toc_toe</title>
+    <style>
+        .cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+
+        .container {
+            margin-left: 440px;
+            margin-top: 79px;
+        }
+
+        body,
+        .container {
+            background-color: #777;
+        }
+
+        .box_1 {
+
+            width: 700px;
+            margin-left: 50px;
+
+            display: flex;
+        }
+
+        .box_2 {
+            width: 700px;
+            display: flex;
+            margin-left: 50px;
+        }
+
+        .box_3 {
+            width: 700px;
+            display: flex;
+            margin-left: 50px;
+        }
+
+        #b1 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+
+            border-left: hidden;
+            border-top: hidden;
+            background-color: #777;
+        }
+
+        #b2 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+
+            border-left: hidden;
+            border-top: hidden;
+            background-color: #777;
+        }
+
+        #b3 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+
+            border-bottom: 1px solid white;
+
+            border-left: hidden;
+            border-top: hidden;
+            border-right: hidden;
+            background-color: #777;
+        }
+
+        #b4 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            background-color: #777;
+            border-top: hidden;
+            border-left: hidden;
+        }
+
+        #b5 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            background-color: #777;
+            border-top: hidden;
+            border-left: hidden;
+        }
+
+        #b6 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+
+            border-bottom: 1px solid white;
+            background-color: #777;
+            border-top: hidden;
+            border-left: hidden;
+            border-right: hidden;
+        }
+
+
+        #b7 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+            background-color: #777;
+            border-top: hidden;
+            border-left: hidden;
+            border-right: 1px solid white;
+            border-bottom: hidden;
+        }
+
+        #b8 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+            background-color: #777;
+            border-top: hidden;
+            border-left: hidden;
+            border-bottom: hidden;
+            border-right: 1px solid white;
+
+
+        }
+
+        #b9 {
+            margin-left: 0px;
+            height: 100px;
+            width: 100px;
+            border-top: hidden;
+            border-right: hidden;
+            border-bottom: hidden;
+            border-left: hidden;
+            background-color: #777;
+        }
+
+        #res_btn {
+            color: bisque;
+            padding: 10px 180px;
+            background-color: rgb(99, 148, 240);
+            font-size: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box_1">
+            <input type="text" id="b1" class="cell" onclick="fun_1(); fun();" readonly>
+            <input type="text" id="b2" class="cell" onclick="fun_2(); fun()" readonly>
+            <input type="text" id="b3" class="cell" onclick="fun_3(); fun()" readonly>
+        </div>
+
+        <div class="box_2">
+            <input type="text" id="b4" class="cell" onclick="fun_4(); fun()" readonly>
+            <input type="text" id="b5" class="cell" onclick="fun_5(); fun()" readonly>
+            <input type="text" id="b6" class="cell" onclick="fun_6(); fun()" readonly>
+        </div>
+        <div class="box_3">
+            <input type="text" id="b7" class="cell" onclick="fun_7(); fun()" readonly>
+            <input type="text" id="b8" class="cell" onclick="fun_8(); fun()" readonly>
+            <input type="text" id="b9" class="cell" onclick="fun_9(); fun()" readonly>
+        </div>
+        <br><br><br>
+        <button id="res_btn" onclick="funForReset()">RESET</button>
+        <br><br>
+        <h3 id="print"></h3>
+    </div>
+    <script src="tic_toc_toe.js"></script>
+</body>
+
+</html>
